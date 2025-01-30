@@ -5,7 +5,7 @@ Make a sound on the hour
 
 JD Linares
 2025 01 22
-2025 01 28
+2025 01 29
 
 Add to crontab: 
 # Note TIMEZONE
@@ -30,14 +30,14 @@ def play_fives(fives_val):
         hour_tone.on()
         time.sleep(1)
         hour_tone.off()
-        time.sleep(1)
+        time.sleep(.5)
 
 def play_ones(ones_val):
     for i in range(ones_val):
         hour_tone.on()
         time.sleep(.1)
         hour_tone.off()
-        time.sleep(.1)
+        time.sleep(.2)
 
 my_hour = my_time.hour%12      # convert to 12 hour time
 
